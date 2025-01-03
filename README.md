@@ -1,4 +1,4 @@
-# AI Project Planning Assistant
+# AI Agentic Project Planning Assistant
 
 An intelligent project planning tool that uses AI agents to break down project requirements, estimate timelines, and allocate resources. The system generates detailed task breakdowns, milestone categorizations, and interactive Gantt charts.
 
