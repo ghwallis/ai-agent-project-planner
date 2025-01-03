@@ -1,0 +1,11 @@
+task_breakdown:
+  description: "Carefully analyze the project_requirements for the {project_type} project and break them down into individual tasks. Define each task's scope in detail, set achievable timelines, and ensure that all dependencies are accounted for:\n\n{project_requirements}\n\n\nTeam members:\n\n{team_members}\n\n"
+  expected_output: "Detailed task breakdown with dependencies and timelines"
+
+time_resource_estimation:
+  description: "Thoroughly evaluate each task in the {project_type} project to estimate the time, resources, and effort required. Use historical data, task complexity, and available resources to provide a realistic estimation for each task based on the {project_start_date} and {project_end_date}."
+  expected_output: "Time and resource estimates for each task"
+
+resource_allocation:
+  description: "Strategically allocate tasks for the {project_type} project to team members based on their skills, availability, and current workload and task difficulty. Ensure that each task is assigned to the most suitable team member and that the workload is evenly distributed.\n\nTeam members:\n\n{team_members}\n\n based on the {project_start_date} and {project_end_date}."
+  expected_output: "Task assignments with resource allocation based on the {project_start_date} and {project_end_date} and the {project_requirements}."

@@ -1,0 +1,11 @@
+flask
+pydantic
+PyYAML
+pandas
+python-dotenv
+tabulate
+plotly
+crewai
+IPython
+
+
