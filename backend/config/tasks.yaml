@@ -9,3 +9,15 @@ time_resource_estimation:
 resource_allocation:
   description: "Strategically allocate tasks for the {project_type} project to team members based on their skills, availability, and current workload and task difficulty. Ensure that each task is assigned to the most suitable team member and that the workload is evenly distributed.\n\nTeam members:\n\n{team_members}\n\n based on the {project_start_date} and {project_end_date}."
   expected_output: "Task assignments with resource allocation based on the {project_start_date} and {project_end_date} and the {project_requirements}."
+
+backlog_creation:
+  description: "Convert high-level requirements into a backlog of user stories for the {project_type} project."
+  expected_output: "JSON list of user stories with acceptance criteria"
+
+backlog_prioritization:
+  description: "Prioritize the backlog items based on business value and effort."
+  expected_output: "Backlog ordered from highest to lowest priority"
+
+sprint_planning:
+  description: "Group prioritized backlog items into a two-week sprint plan."
+  expected_output: "Sprint plan with assigned stories and estimates"

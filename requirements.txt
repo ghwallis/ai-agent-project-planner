@@ -15,5 +15,5 @@ IPython
 tabulate
 plotly
 xlsxwriter
-+ flask
-+ flask-cors
+flask
+flask-cors
