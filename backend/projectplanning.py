@@ -491,6 +491,19 @@ def create_sprint_plan(data):
     return str(result)
 
 
+def update_progress(data):
+    """Generate a progress report for the current sprint."""
+    agent = Agent(**agents_config['progress_tracking_agent'])
+    task = Task(
+        description=tasks_config['progress_update']['description'],
+        expected_output=tasks_config['progress_update']['expected_output'],
+        agent=agent,
+    )
+    crew = Crew(agents=[agent], tasks=[task], verbose=True)
+    result = crew.kickoff()
+    return str(result)
+
+
 
 
 

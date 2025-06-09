@@ -4,6 +4,7 @@ from projectplanning import (
     create_project_plan,
     create_backlog,
     create_sprint_plan,
+    update_progress,
 )
 from integrations import jira, asana
 
@@ -44,6 +45,13 @@ def api_plan_sprint():
     data = request.json
     sprint = create_sprint_plan(data)
     return jsonify({'sprint': sprint})
+
+
+@app.route('/progress-update', methods=['POST'])
+def api_progress_update():
+    data = request.json
+    progress = update_progress(data)
+    return jsonify({'progress': progress})
 
 
 @app.route('/sync-external', methods=['POST'])

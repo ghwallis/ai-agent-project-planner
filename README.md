@@ -12,6 +12,7 @@ An intelligent project planning tool that uses AI agents to break down project r
 - 📑 **Excel export functionality**
 - 🔄 **Backlog and sprint planning with agile agents**
 - 🔗 **Optional syncing to Jira or Asana**
+- 🚀 **Continuous progress tracking and status updates**
 
 ### Target Groups and Use Cases
 
@@ -111,6 +112,7 @@ Click **"Generate Plan"** to create your project plan.
 - **Backlog Manager**: Converts requirements into a user story backlog.
 - **Sprint Planner**: Organizes backlog items into sprints.
 - **Prioritization Guru**: Orders backlog items by business value.
+- **Progress Monitor**: Tracks sprint progress and reports blockers.
 
 ### Output
 

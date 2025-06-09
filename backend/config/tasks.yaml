@@ -21,3 +21,7 @@ backlog_prioritization:
 sprint_planning:
   description: "Group prioritized backlog items into a two-week sprint plan."
   expected_output: "Sprint plan with assigned stories and estimates"
+
+progress_update:
+  description: "Provide a status update on ongoing tasks, highlighting completed work, upcoming tasks, and blockers."
+  expected_output: "Summary of progress for the current sprint"

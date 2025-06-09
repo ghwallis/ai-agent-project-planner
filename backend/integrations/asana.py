@@ -13,3 +13,12 @@ def create_task(title: str, description: str):
         return False
     print(f"Would create Asana task '{title}' in project {PROJECT_ID}")
     return True
+
+
+def update_task(task_id: str, status: str):
+    """Simulate updating a task's status in Asana."""
+    if not API_TOKEN or not PROJECT_ID:
+        print("Asana credentials not configured")
+        return False
+    print(f"Would update Asana task {task_id} to status '{status}'")
+    return True
