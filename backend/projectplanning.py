@@ -464,6 +464,46 @@ def create_project_plan(data):
         }
 
 
+def create_backlog(data):
+    """Generate a simple backlog using the backlog_management_agent."""
+    agent = Agent(**agents_config['backlog_management_agent'])
+    description = f"Project requirements:\n{data.get('project_requirements', [])}"
+    task = Task(
+        description=tasks_config['backlog_creation']['description'].format(project_type=data.get('project_name', 'Project')),
+        expected_output=tasks_config['backlog_creation']['expected_output'],
+        agent=agent,
+    )
+    crew = Crew(agents=[agent], tasks=[task], verbose=True)
+    result = crew.kickoff()
+    return str(result)
+
+
+def create_sprint_plan(data):
+    """Create a sprint plan from backlog items."""
+    agent = Agent(**agents_config['sprint_planning_agent'])
+    task = Task(
+        description=tasks_config['sprint_planning']['description'],
+        expected_output=tasks_config['sprint_planning']['expected_output'],
+        agent=agent,
+    )
+    crew = Crew(agents=[agent], tasks=[task], verbose=True)
+    result = crew.kickoff()
+    return str(result)
+
+
+def update_progress(data):
+    """Generate a progress report for the current sprint."""
+    agent = Agent(**agents_config['progress_tracking_agent'])
+    task = Task(
+        description=tasks_config['progress_update']['description'],
+        expected_output=tasks_config['progress_update']['expected_output'],
+        agent=agent,
+    )
+    crew = Crew(agents=[agent], tasks=[task], verbose=True)
+    result = crew.kickoff()
+    return str(result)
+
+
 
 
 

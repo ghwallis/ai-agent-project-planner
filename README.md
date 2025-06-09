@@ -10,6 +10,9 @@ An intelligent project planning tool that uses AI agents to break down project r
 - 🎯 **Smart milestone categorization**
 - 📅 **Resource allocation and timeline management**
 - 📑 **Excel export functionality**
+- 🔄 **Backlog and sprint planning with agile agents**
+- 🔗 **Optional syncing to Jira or Asana**
+- 🚀 **Continuous progress tracking and status updates**
 
 ### Target Groups and Use Cases
 
@@ -64,6 +67,9 @@ OPENAI_API_KEY=your_api_key_here
 │   │   └── tasks.yaml
 │   ├── app.py
 │   ├── helper.py
+│   ├── integrations/
+│   │   ├── jira.py
+│   │   └── asana.py
 │   └── projectplanning.py
 ├── frontend/
 │   ├── index.html
@@ -103,6 +109,10 @@ Click **"Generate Plan"** to create your project plan.
 - **Project Planning Expert**: Breaks down requirements into tasks.
 - **Estimation Specialist**: Provides time and resource estimates.
 - **Resource Management Expert**: Optimizes resource allocation.
+- **Backlog Manager**: Converts requirements into a user story backlog.
+- **Sprint Planner**: Organizes backlog items into sprints.
+- **Prioritization Guru**: Orders backlog items by business value.
+- **Progress Monitor**: Tracks sprint progress and reports blockers.
 
 ### Output
 
